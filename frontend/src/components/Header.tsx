@@ -83,7 +83,7 @@ const Header = () => {
 
                   
 
-                  <div className="w-screen grid grid-cols-1 b-[2rem">
+                  <div className="w-screen grid grid-cols-1 b-[2rem]">
                  
                   <Link
                     to={'/'}
