@@ -7,8 +7,8 @@ import { Link } from "react-router-dom";
 
 const Footer: React.FC = () => {
     return (
-      <footer className="flex bg-[#B4D9CB] text-white py-4 bottom-0 mb-0 ">
-        <div className="flex text-[f2f2f2] m-[1.5rem]">
+      <footer className="flex bg-[#B4D9CB] items-center justify-center text-white py-4 bottom-0 mb-0 ">
+        <div className="flex text-[f2f2f2] m-[1.5rem] ">
 
             <Link 
              to='/'
@@ -19,7 +19,7 @@ const Footer: React.FC = () => {
 
            
         </div>
-        <div className="flex items-center justify-center">
+        <div className="flex items-center justify-center text-center">
                 <Link 
                  to='https://www.facebook.com/argomdelicias?mibextid=ZbWKwL'
                  className="w-[6rem] h-[6rem] m-[1rem]" 

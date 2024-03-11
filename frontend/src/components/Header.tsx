@@ -1,9 +1,9 @@
-import { Link } from "react-router-dom"
-import React from "react"
-import logoargom from '../assets/logoargom.png'
-import logoinstagram from '../IMG/logos/greeninstagram.png'
-import { Disclosure, Menu, Transition } from '@headlessui/react'
-import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
+import { Link } from "react-router-dom";
+import React from "react";
+import logoargom from '../assets/logoargom.png';
+import logoinstagram from '../IMG/logos/greeninstagram.png';
+import { Disclosure, Menu, Transition } from '@headlessui/react';
+import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline';
 
 const Header = () => {
 
@@ -77,34 +77,34 @@ const Header = () => {
 
                 </div>
 
-                <Disclosure.Panel className="sm:hidden w-auto h-screen bg-[#f2f2f2] p-[12rem] mt-[20rem]">
+                <Disclosure.Panel className="sm:hidden w-auto h-screen bg-[#f2f2f2] p-[12rem]">
 
                 <div className="mt-4 p-4 lg:hidden]">
 
                   
 
-                  <div className="w-screen grid grid-cols-1 b-[2rem]">
+                  <div className="w-screen p-[4rem] grid grid-cols-1 b-[2rem]">
                  
                   <Link
                     to={'/'}
-                    className='font-serif text-[2rem] p-2 m-[1rem] px-4 rounded-lg text-black'
+                    className='font-serif  text-[2rem] p-2 m-[1rem] px-4 rounded-lg text-black'
                   >
                     Inicio
                   </Link>
                   <Link
-                    to={'/'}
+                    to={'/Catalogo'}
                     className='font-serif text-[2rem] p-2 m-[1rem] px-4 rounded-lg text-black'
                   >
                     Catalogo
                   </Link>
                   <Link
-                    to={'/'}
+                    to={'/Sobre Nosotros'}
                     className='font-serif text-[2rem] p-2 m-[1rem] px-4 rounded-lg text-black'
                   >
                     Sobre Nosotros
                   </Link>
                   <Link
-                    to={'/'}
+                    to={'/Contacto'}
                     className='font-serif text-[2rem] p-2 m-[1rem] px-4 rounded-lg text-black'
                   >
                     Contacto
