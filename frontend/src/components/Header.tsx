@@ -29,7 +29,7 @@ const Header = () => {
 
                   </div>
 
-                <div className="flex flex-3 items center justify-center sm:items-stretch sm:justify-start mt-[13rem]">
+                <div className="flex flex-3 items-center justify-center sm:items-stretch sm:justify-start mt-[13rem]">
                         
                         <div className="hidden sm:ml-6 sm:block">
 
@@ -42,7 +42,7 @@ const Header = () => {
                             Inicio
                           </Link>
                           <Link
-                            to={'/'}
+                            to={'/Catalogo'}
                             className="font-serif pt-[8rem] m-[4rem] font-size text-[1.6rem]"
                           >
                             Catalogo
@@ -56,14 +56,14 @@ const Header = () => {
                         </Link>
 
                         <Link
-                          to={'/'}
+                          to={'/Sobre Nosotros'}
                           className="font-serif pt-[8rem] m-[4rem] font-size text-[1.6rem]"
                         >
                             Sobre Nosotros
                         </Link>
 
                         <Link
-                          to={'/'}
+                          to={'/Contacto'}
                           className="font-serif pt-[8rem] m-[4rem] font-size text-[1.6rem]"
                         >
                             Contacto
