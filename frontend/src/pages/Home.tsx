@@ -5,8 +5,6 @@ const Home = () => {
 
     return(
         <>
-
-         <p>Inicio</p>
          <Carousel />
         </>
     )
