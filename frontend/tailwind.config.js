@@ -9,7 +9,7 @@ export default {
   },
   colors: {
     'shadow-grey': '#F2F2F2',
-    'surf-green': 'B4D9CB',
+    'surf-green': '#B4D9CB',
     'pink': '#ff49db',
     'orange': '#ff7849',
     'green': '#13ce66',
