@@ -20,7 +20,7 @@ function Carousel(props: Props) {
         if (props.autoPlay || !props.showButtons) {
           const interval = setInterval(() => {
             selectNewImage(true);
-          }, 6000); // Duración de 5 segundos
+          }, 6000); // Duración de segundos
           return () => clearInterval(interval);
         }
     }, [selectedIndex, props.autoPlay, props.showButtons]);
