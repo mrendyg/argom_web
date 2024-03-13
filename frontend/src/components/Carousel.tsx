@@ -39,18 +39,18 @@ function Carousel(props: Props) {
     };
 
     return (
-        <div>
-            <div className="w-[50rem] h-[31rem]">
+        <div className="">
+            <div className="w-screen h-[45rem] overflow-hidden clip-rounded-full">
                 <img
                     src={selectedImage}
                     alt="imagen_de_carrusel"
-                    className={`max-w-500 w-full h-100 object-cover transition-opacity ${loaded ? 'opacity-100' : 'opacity-0'}`}
+                    className={`max-w-500 w-full h-100 object-cover clip-top-bottom transition-opacity ${loaded ? 'opacity-100' : 'opacity-0'}`}
                     onLoad={() => setLoaded(true)}
                 />
             </div>
-            <div className="flex items-center flex-row mt-15">
-                <button onClick={previous} className="text-white bg-[#eb118a] px-8 py-2 mx-5">{"<"}</button>
-                <button onClick={next} className="text-white bg-[#eb118a] px-8 py-2 mx-5">{">"}</button>
+            <div className="items-center">
+                <button onClick={previous} className="text-[#C8C8C8] bg-[#f2f2f2] bg-opacity-70 px-8 py-2 mx-5">{"<"}</button>
+                <button onClick={next} className="text-[#C8C8C8] bg-[#f2f2f2] bg-opacity-70 right-0 px-8 py-2 mx-5">{">"}</button>
             </div>
         </div>
     );

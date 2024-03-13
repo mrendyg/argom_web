@@ -10,21 +10,23 @@ const Header = () => {
     return (
 
       <>
-        <Disclosure as="nav" className="bg-[#f2f2f2] w-auto h-[5rem] sm:h-[16rem]  sm:items-stretch sm:justify-start ">
+        <Disclosure as="nav" className="bg-[#f2f2f2] w-auto h-[5rem] md:h-[16rem] md:items-stretch md:justify-start sm:h-[16rem]  sm:items-stretch sm:justify-start ">
           {({open}) =>
             <>
               <div className="mx-auto max-w-7x1 px-2 sm:px-6 lg:px-8">
-                <div className="relative flex h-16 items-center justify-center rounded-md p-2 text-[#000000]">
+                <div className="relative flex h-[4rem] items-center justify-center rounded-md p-2 text-[#000000]">
                   <div className="absolute inset-y-0 left-0 flexditems-center sm:hidden">
 
-                    <Disclosure.Button className="inline-flex items-center justify-center m rounded-md p-2 text-[#000000] hover:text-[#AEAEAE]">
-                    <img src={logoargom} alt="" width={50}/>
+                    <Disclosure.Button className="inline-flex items-center justify-center rounded-md p-2 text-[#000000] hover:text-[#AEAEAE]">
+                    <img src={logoargom} alt="logoargom"  style={{ width: '3rem' }}/>
                       <span className="sr-only">Open main menu</span>
-                      {open ? (
-                        <XMarkIcon className="block h-[3rem] w-[3rem]" aria-hidden="true" />
-                      ) : (
-                        <Bars3Icon className="block h-[3rem] w-[3rem]" aria-hidden="true"/>
-                      )}
+                      <div>
+                        {open ? (
+                          <XMarkIcon className="block h-[3rem] w-[3rem]" aria-hidden="true" />
+                        ) : (
+                          <Bars3Icon className="block h-[3rem] w-[3rem]" aria-hidden="true"/>
+                        )}
+                      </div>
                     </Disclosure.Button>
 
                   </div>
@@ -37,37 +39,37 @@ const Header = () => {
 
                           <Link
                             to={'/'}
-                            className="font-serif pt-[8rem] m-[4rem] font-size text-[1.6rem]"
+                            className="font-serif pt-[8rem] m-[4rem] font-size text-[1.6rem] hover:text-[#BF8D50]"
                           >
                             Inicio
                           </Link>
                           <Link
                             to={'/Catalogo'}
-                            className="font-serif pt-[8rem] m-[4rem] font-size text-[1.6rem]"
+                            className="font-serif pt-[8rem] m-[4rem] font-size text-[1.6rem] hover:text-[#BF8D50]"
                           >
                             Catalogo
                           </Link>
 
                           <Link 
                             to={'/'}
-                            className="w-[12.5rem] h-[12.5rem] mt-[2rem] m-[2rem]"
+                            className="w-[12.5rem] h-[12.5rem] mt-[2rem] m-[2rem] hover:text-[#BF8D50]"
                           >
                             <img src={logoargom} alt="logoargom"/>
                         </Link>
 
                         <Link
                           to={'/Sobre Nosotros'}
-                          className="font-serif pt-[8rem] m-[4rem] font-size text-[1.6rem]"
+                          className="font-serif pt-[8rem] m-[4rem] font-size text-[1.6rem] hover:text-[#BF8D50]"
                         >
                             Sobre Nosotros
                         </Link>
 
                         <Link
                           to={'/Contacto'}
-                          className="font-serif pt-[8rem] m-[4rem] font-size text-[1.6rem]"
+                          className="font-serif pt-[8rem] m-[4rem] font-size text-[1.6rem] hover:text-[#BF8D50]"
                         >
                             Contacto
-                        </Link>
+                        </Link >
                             
 
                           </div>
@@ -77,47 +79,50 @@ const Header = () => {
 
                 </div>
 
-                <Disclosure.Panel className="sm:hidden w-auto h-screen bg-[#f2f2f2] p-[12rem]">
+                <Disclosure.Panel className="sm:hidden w-auto h-auto bg-[#f2f2f2] p-[12rem]">
 
-                <div className="mt-4 p-4 lg:hidden]">
+                  <div className="p-4 lg:hidden">
+                    <div className="w-screen p-[4rem] grid grid-cols-1 b-[2rem] mt-auto pt-[28rem]">
+                      
+                      <div className="ml-[-1rem] ">
+                        <Link
+                          to={'/'}
+                          className='block font-serif text-[2rem] px-4 p-[0.5rem] rounded-lg text-black max-w-[80vw]  hover:text-[#BF8D50]'
+                          // ^ Añade max-w-[80vw] para limitar el ancho del texto
+                        >
+                          Inicio
+                        </Link>
 
-                  
+                        <Link
+                          to={'/Catalogo'}
+                          className='block font-serif text-[2rem] px-4 p-[0.5rem] rounded-lg text-black max-w-[80vw] hover:text-[#BF8D50]'
+                        >
+                          Catalogo
+                        </Link>
 
-                  <div className="w-screen p-[4rem] grid grid-cols-1 b-[2rem]">
-                 
-                  <Link
-                    to={'/'}
-                    className='font-serif  text-[2rem] p-2 m-[1rem] px-4 rounded-lg text-black'
-                  >
-                    Inicio
-                  </Link>
-                  <Link
-                    to={'/Catalogo'}
-                    className='font-serif text-[2rem] p-2 m-[1rem] px-4 rounded-lg text-black'
-                  >
-                    Catalogo
-                  </Link>
-                  <Link
-                    to={'/Sobre Nosotros'}
-                    className='font-serif text-[2rem] p-2 m-[1rem] px-4 rounded-lg text-black'
-                  >
-                    Sobre Nosotros
-                  </Link>
-                  <Link
-                    to={'/Contacto'}
-                    className='font-serif text-[2rem] p-2 m-[1rem] px-4 rounded-lg text-black'
-                  >
-                    Contacto
-                  </Link>
-
-                  <Link
-                    to="https://www.instagram.com/argom_delicias?igsh=MzZzYzJxanpudnFr"
-                    className=""
-                  >
-                   <img src={logoinstagram} alt="logoinstagram" width={50} height={50} className="ml-[2rem] mt-[1rem]"/>
-                  </Link>
+                        <Link
+                          to={'/Sobre Nosotros'}
+                          className='block font-serif text-[2rem] px-4 p-[0.5rem] rounded-lg text-black max-w-[80vw] max-h-[80vw] hover:text-[#BF8D50]'
+                        >
+                          Sobre Nosotros
+                        </Link>
+                        <Link
+                          to={'/Contacto'}
+                          className='block font-serif text-[2rem] px-4 p-[0.5rem] rounded-lg text-black max-w-[80vw] hover:text-[#BF8D50]'
+                        >
+                          Contacto
+                        </Link>
+                      </div>
+                      <div className="ml-[-1rem]">
+                        <Link
+                          to="https://www.instagram.com/argom_delicias?igsh=MzZzYzJxanpudnFr"
+                          className=""
+                        >
+                          <img src={logoinstagram} alt="logoinstagram" width={50} height={50} className="ml-[2rem] mt-[1rem]"/>
+                        </Link>
+                      </div>
+                    </div>
                   </div>
-                </div>
                 </Disclosure.Panel>
                           
                 </div>

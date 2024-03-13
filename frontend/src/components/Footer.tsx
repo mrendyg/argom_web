@@ -19,6 +19,7 @@ const Footer: React.FC = () => {
 
            
         </div>
+        
         <div className="flex items-center justify-center text-center">
                 <Link 
                  to='https://www.facebook.com/argomdelicias?mibextid=ZbWKwL'
