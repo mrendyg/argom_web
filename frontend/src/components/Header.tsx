@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import React from "react";
 import logoargom from '../assets/logoargom.png';
 import logoinstagram from '../IMG/logos/greeninstagram.png';
+import logofacebook from '../IMG/logos/facebooklogogreen.png';
 import { Disclosure, Menu, Transition } from '@headlessui/react';
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline';
 
@@ -10,7 +11,7 @@ const Header = () => {
     return (
 
       <>
-        <Disclosure as="nav" className="bg-[#f2f2f2] w-auto h-[5rem] md:h-[16rem] md:items-stretch md:justify-start sm:h-[16rem]  sm:items-stretch sm:justify-start ">
+        <Disclosure as="nav" className="bg-[#f2f2f2] w-auto h-[4rem] md:h-[16rem] md:items-stretch md:justify-start sm:h-[12rem]  sm:items-stretch sm:justify-start ">
           {({open}) =>
             <>
               <div className="mx-auto max-w-7x1 px-2 sm:px-6 lg:px-8">
@@ -79,7 +80,7 @@ const Header = () => {
 
                 </div>
 
-                <Disclosure.Panel className="sm:hidden w-auto h-auto bg-[#f2f2f2] p-[12rem]">
+                <Disclosure.Panel className="sm:hidden w-auto h-auto bg-[#f2f2f2] p-[12rem] bg-opacity-80">
 
                   <div className="p-4 lg:hidden">
                     <div className="w-screen p-[4rem] grid grid-cols-1 b-[2rem] mt-auto pt-[28rem]">
@@ -113,13 +114,22 @@ const Header = () => {
                           Contacto
                         </Link>
                       </div>
-                      <div className="ml-[-1rem]">
+                      <div className="inline-flex justify-center mt-[1rem]">
                         <Link
                           to="https://www.instagram.com/argom_delicias?igsh=MzZzYzJxanpudnFr"
                           className=""
                         >
-                          <img src={logoinstagram} alt="logoinstagram" width={50} height={50} className="ml-[2rem] mt-[1rem]"/>
+                          <img src={logoinstagram} alt="logoinstagram" width={50} height={50} className=""/>
                         </Link>
+
+                          
+                        <Link
+                          to="https://web.facebook.com/argomdelicias?mibextid=ZbWKwL&_rdc=1&_rdr"
+                          className=""
+                        >
+                          <img src={logofacebook} alt="logofacebook" width={50} height={50} className="ml-[1rem]"/>
+                        </Link>
+                          
                       </div>
                     </div>
                   </div>

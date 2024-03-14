@@ -1,5 +1,4 @@
 import React from "react"
-import { Disclosure } from "@headlessui/react";
 import logoargom from '../assets/logoargom.png';
 import logofacebook from '../IMG/logos/facebooklogogrey.png';
 import logoinstragram from '../IMG/logos/instagramlogogrey.png';
@@ -7,8 +6,8 @@ import { Link } from "react-router-dom";
 
 const Footer: React.FC = () => {
     return (
-      <footer className="flex bg-[#B4D9CB] items-center justify-center text-white py-4 bottom-0 mb-0 ">
-        <div className="flex text-[f2f2f2] m-[1.5rem] ">
+      <footer className="flex bg-[#B4D9CB] items-center justify-center text-white py-4">
+        <div className="flex text-[f2f2f2] ">
 
             <Link 
              to='/'
