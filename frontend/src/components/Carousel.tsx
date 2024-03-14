@@ -40,17 +40,21 @@ function Carousel(props: Props) {
 
     return (
         <div className="">
-            <div className="w-screen h-[45rem] overflow-hidden clip-rounded-full">
+            <div className="w-full h-auto overflow-hidden clip-rounded-full">
                 <img
                     src={selectedImage}
                     alt="imagen_de_carrusel"
-                    className={`max-w-500 w-full h-100 object-cover clip-top-bottom transition-opacity ${loaded ? 'opacity-100' : 'opacity-0'}`}
+                    className={`max-w-500 w-full object-cover clip-top-bottom transition-opacity ${loaded ? 'opacity-100' : 'opacity-0'}`}
                     onLoad={() => setLoaded(true)}
                 />
-            </div>
-            <div className="items-center">
-                <button onClick={previous} className="text-[#C8C8C8] bg-[#f2f2f2] bg-opacity-70 px-8 py-2 mx-5">{"<"}</button>
-                <button onClick={next} className="text-[#C8C8C8] bg-[#f2f2f2] bg-opacity-70 right-0 px-8 py-2 mx-5">{">"}</button>
+                <div className="hidden md:flex">
+                    <div className="absolute top-1/2 top-[38rem] left-[0.5rem] transform -translate-y-1/2">
+                        <button onClick={previous} className="h-[3rem] w-[3rem] text-[#FFFFFF] text-[2rem] text-center items-center justify-center bg-[#F2F2F2] text-opacity-70 bg-opacity-10 rounded-full hover:bg-opacity-60 hover:text-[#F2F2F2] hover:bg-[#FFFFFF]">{"<"}</button>
+                    </div>
+                    <div className="absolute top-1/2 top-[38rem] right-[0.5rem] transform -translate-y-1/2">
+                        <button onClick={next} className="h-[3rem] w-[3rem] text-[#FFFFFF] text-[2rem] text-center items-center justify-center bg-[#F2F2F2] text-opacity-70 bg-opacity-10 rounded-full hover:bg-opacity-60 hover:text-[#F2F2F2] hover:bg-[#FFFFFF]">{">"}</button>
+                    </div>
+                </div>
             </div>
         </div>
     );

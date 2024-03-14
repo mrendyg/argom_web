@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 
 const Footer: React.FC = () => {
     return (
-      <footer className="flex bg-[#B4D9CB] items-center justify-center text-white py-4">
+      <footer className="w-full h-full flex bg-[#B4D9CB] items-center justify-center text-white py-4">
         <div className="flex text-[f2f2f2] ">
 
             <Link 

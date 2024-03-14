@@ -1,8 +1,8 @@
 import { Link } from "react-router-dom";
 import React from "react";
 import logoargom from '../assets/logoargom.png';
-import logoinstagram from '../IMG/logos/greeninstagram.png';
-import logofacebook from '../IMG/logos/facebooklogogreen.png';
+import logoinstagram from '../IMG/logos/blackinstagram.png';
+import logofacebook from '../IMG/logos/blackfacebook.png';
 import { Disclosure, Menu, Transition } from '@headlessui/react';
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline';
 
@@ -11,7 +11,7 @@ const Header = () => {
     return (
 
       <>
-        <Disclosure as="nav" className="bg-[#f2f2f2] w-auto h-[4rem] md:h-[16rem] md:items-stretch md:justify-start sm:h-[12rem]  sm:items-stretch sm:justify-start ">
+        <Disclosure as="nav" className="bg-[#f2f2f2] w-auto h-[4rem] md:h-[16rem] md:items-stretch md:justify-start sm:h-[16rem]  sm:items-stretch sm:justify-start ">
           {({open}) =>
             <>
               <div className="mx-auto max-w-7x1 px-2 sm:px-6 lg:px-8">
@@ -62,7 +62,7 @@ const Header = () => {
                           to={'/Sobre Nosotros'}
                           className="font-serif pt-[8rem] m-[4rem] font-size text-[1.6rem] hover:text-[#BF8D50]"
                         >
-                            Sobre Nosotros
+                            Nosotros
                         </Link>
 
                         <Link
@@ -80,7 +80,7 @@ const Header = () => {
 
                 </div>
 
-                <Disclosure.Panel className="sm:hidden w-auto h-auto bg-[#f2f2f2] p-[12rem] bg-opacity-80">
+                <Disclosure.Panel className=" sm:hidden w-auto h-auto bg-[#f2f2f2] p-[12rem] bg-opacity-80">
 
                   <div className="p-4 lg:hidden">
                     <div className="w-screen p-[4rem] grid grid-cols-1 b-[2rem] mt-auto pt-[28rem]">
@@ -105,7 +105,7 @@ const Header = () => {
                           to={'/Sobre Nosotros'}
                           className='block font-serif text-[2rem] px-4 p-[0.5rem] rounded-lg text-black max-w-[80vw] max-h-[80vw] hover:text-[#BF8D50]'
                         >
-                          Sobre Nosotros
+                          Nosotros
                         </Link>
                         <Link
                           to={'/Contacto'}
